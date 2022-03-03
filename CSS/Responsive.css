@@ -1,0 +1,373 @@
+:root {
+    --Head-Font-re: calc(22pt + 0.15vw);
+    --h2-re: calc(21pt + 0.15vw);
+    --h3-re: calc(20pt + 0.15vw);
+    --h4--re: calc(18pt + 0.15vw);
+    --Para-Font-re: calc(12pt + 0.15vw);
+    --Subpara-Font-re: calc(10pt + 0.15vw);
+    --letter-spacing-re: 0.04em;
+    --line-height-re: 1.6195;
+}
+
+@media only screen and (max-width: 40em) {
+    .toggle {
+        display: block;
+        padding: 0px 15px;
+        color: #1C3052;
+        font-size: var(--Subpara-Font);
+        font-family: 'Circular__Medium';
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        letter-spacing: 0.03em;
+    }
+    #logo #QES__Logo {
+        width: 210px;
+        transform: translate(-15px, -8px);
+        -webkit-transform: translate(-15px, -8px);
+        -moz-transform: translate(-15px, -8px);
+        -ms-transform: translate(-15px, -8px);
+        -o-transform: translate(-15px, -8px);
+    }
+    .Heading {
+        font-size: var(--Head-Font-re);
+    }
+    .Para {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .Text__aside__div h3 {
+        font-size: var(--h3-re);
+    }
+    .Text__aside__div p:nth-child(3) {
+        font-size: var(--Para-Font-re);
+    }
+    .Text__Btn h3 {
+        font-size: var(--h3-re);
+    }
+    .Gray__col__Text h3 {
+        font-size: var(--h3-re);
+    }
+    .Gray__col__Text p:nth-child(3) {
+        font-size: var(--Para-Font-re);
+    }
+    .Text__BG__div h3 {
+        font-size: var(--h3-re);
+    }
+    .Text__BG__div p:nth-child(3) {
+        font-size: var(--Para-Font-re);
+    }
+    .BG__left__col h4 {
+        font-size: var(--h4--re);
+    }
+    .Footer__text h3 {
+        font-size: var(--h3-re);
+        line-height: 1.2195;
+    }
+    .Footer__text p {
+        font-size: var(--Para-Font-re);
+        line-height: 1.6195;
+    }
+    /* About us Style starts here */
+    .Heading__About {
+        font-size: var(--Head-Font-re);
+    }
+    .Txt__wrapper__col h3 {
+        font-size: var(--h3-re);
+    }
+    .Paragraph p {
+        font-size: var(--Para-Font-re);
+    }
+    .Div__Text h3 {
+        font-size: var(--h3-re);
+    }
+    .DIV__Text__Para p {
+        font-size: var(--Para-Font-re);
+    }
+    .WrapperContain__dbl__col h3 {
+        font-size: var(--h3-re);
+    }
+    .Big__col__para p {
+        font-size: var(--Para-Font-re);
+    }
+    /* About us style ends here */
+    /* Services style starts here */
+    .Heading__Serv {
+        font-size: var(--Head-Font-re);
+    }
+    .Para__Intro h3 {
+        font-size: var(--h3-re);
+    }
+    .Para__Intro p {
+        font-size: var(--Para-Font-re);
+    }
+    .Text__cols p:nth-child(2) {
+        font-size: var(--Para-Font-re);
+    }
+    .Heading__serv {
+        font-size: var(--Head-Font-re);
+    }
+    .Text__Wrapper h3 {
+        font-size: var(--h3-re);
+    }
+    .Text__wrapper__para p {
+        font-size: var(--Para-Font-re);
+    }
+    /* Graphic starts here */
+    .Heading__graph {
+        font-size: var(--Head-Font-re);
+    }
+    .Text__InterService h3 {
+        font-size: var(--h3-re);
+    }
+    .Full__paragraph p {
+        font-size: var(--Para-Font-re);
+    }
+    .First__para p:nth-child(2) {
+        font-size: var(--Para-Font-re);
+    }
+    /* Graphic ends here */
+    /* Foreign language staffing */
+    .Languagestaff__container h3 {
+        font-size: var(--h3-re);
+    }
+    .Translation__Wrapper h3 {
+        font-size: var(--h3-re);
+    }
+    .Translation__Wrapper p {
+        font-size: var(--Para-Font-re);
+    }
+    .Sec__para ul li p {
+        font-size: var(--Para-Font-re);
+    }
+    .Languagestaff__container p:nth-child(3) {
+        font-size: var(--Para-Font-re);
+    }
+    /* foreign language staffing ends here */
+    /* services style ends here */
+    /* Document management  */
+    .DOC__Text__container h3 {
+        font-size: var(--h3-re);
+    }
+    .Para__Doc p {
+        font-size: var(--Para-Font-re);
+    }
+    /* industries styling starts here */
+    .Para__Text__Ind p {
+        font-size: var(--Para-Font-re);
+    }
+    /* industries styling ends here */
+
+    /* Login page */
+    .Heading__Login{
+        font-size: var(--Head-Font-re);
+    }
+    .Text__Form h3{
+        font-size: var(--h3-re);
+    }
+}
+
+@media screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 40em) and (orientation:landscape) {}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (min-width: 40.063em) {}
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    #logo #QES__Logo {
+        width: 200px !important;
+    }
+    #Nav__Logo {
+        padding: 7px 10px 10px 10px;
+    }
+    .banner-text-div {
+        margin: 195px 23px 100px 23px;
+        min-height: 485px;
+        height: 485px;
+    }
+}
+
+/* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {}
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 64.063em) {
+    #Block {
+        display: block;
+    }
+    ul li a.active::after {
+        background-color: #de3d3b;
+        display: block;
+        bottom: 0;
+        line-height: 30px;
+        height: 3px;
+        width: 100%;
+        -webkit-transform: translate(0px, -11px);
+        -ms-transform: translate(0px, -11px);
+        transform: translate(0px, -11px);
+    }
+    .active .active__underline {
+        border-bottom: 3.50px solid #de3d3b;
+        padding-bottom: 7px;
+    }
+    /* Nav Menu Underline effect starts here */
+    .menu .undered {
+        -webkit-transition: color 0.1s, background-color 0.1s;
+        -o-transition: color 0.1s, background-color 0.1s;
+        transition: color 0.1s, background-color 0.1s;
+    }
+    .menu .undered {
+        position: relative;
+        display: block;
+        padding: 0px 0;
+        margin: 0 12px;
+        -webkit-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+        -o-transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+        transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    }
+    .menu .undered::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #de3d3b;
+        -webkit-transform-origin: right top;
+        -ms-transform-origin: right top;
+        transform-origin: right top;
+        -webkit-transform: scale(0, 1);
+        -ms-transform: scale(0, 1);
+        transform: scale(0, 1);
+        -webkit-transition: color 0.1s, transform 0.2s ease-out;
+        transition: color 0.1s, -webkit-transform 0.2s ease-out;
+        -o-transition: color 0.1s, transform 0.2s ease-out;
+        -webkit-transition: color 0.1s, -webkit-transform 0.2s ease-out;
+        transition: color 0.1s, transform 0.2s ease-out;
+        transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+        -moz-transition: color 0.1s, transform 0.2s ease-out;
+        -ms-transition: color 0.1s, transform 0.2s ease-out;
+    }
+    .menu .undered:active::before {
+        background-color: #de3d3b;
+    }
+    .menu .undered:hover::before, .menu .undered:focus::before {
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+        transform-origin: left top;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    /* ul */
+    .ul__list__only {
+        text-decoration: none;
+        display: inline-block;
+        color: #1C3052;
+    }
+    /* add a empty string after the elment with class .slide-left-right */
+    .ul__list__only:after {
+        content: '';
+        display: block;
+        line-height: 0px;
+        position: absolute;
+        bottom: 10px;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        -o-transition: width .3s ease, background-color .3s ease;
+        transition: width .3s ease, background-color .3s ease;
+        /* .3 seonds for changes to the width and background-color */
+        -webkit-transition: width .3s ease, background-color .3s ease;
+        /* Chrome and Safari */
+        -moz-transition: width .3s ease, background-color .3s ease;
+        /* FireFox */
+    }
+    /* Change the width and background on hover, aka sliding out */
+    .ul__list__only:hover:after {
+        width: 100%;
+        background: #ffff;
+        position: absolute;
+        bottom: 10px;
+    }
+    /* Nav Menu Underline effect ends here */
+    .wrapper {
+        min-height: 100px;
+        height: 100px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+
+/*1280 x 800*/
+
+@media screen and (max-width: 1280px) and (max-height: 800px) and (min-height: 769px) {
+    #logo {
+        width: 100px;
+        padding: 8px 0px 2px 0px;
+    }
+    .Gray__Inside__Text {
+        padding: 0px 50px 0px 0px;
+    }
+}
+
+/*1280 x 960*/
+
+@media screen and (max-width: 1280px) and (max-height: 960px) and (min-height: 801px) {
+    #logo {
+        width: 100px;
+        padding: 8px 0px 2px 0px;
+    }
+}
+
+/* (1280x720) Galaxy Note 2, WXGA */
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    #logo {
+        width: 100px;
+        padding: 8px 0px 2px 0px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    nav a {
+        padding: 0px 20px !important;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #Block {
+        display: block;
+    }
+    nav a {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
+
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+@media only screen and (min-width: 90.063em) {}
+
+/* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+@media only screen and (min-width: 120.063em) {}
+
+/* min-width 1921px, xlarge screens */

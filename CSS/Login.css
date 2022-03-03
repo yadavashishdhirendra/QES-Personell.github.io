@@ -1,0 +1,644 @@
+@font-face {
+    font-family: Circular__Medium;
+    src: url('../Fonts/CircularXX/CircularXX-Medium.woff');
+}
+
+@font-face {
+    font-family: CircularXX__Light;
+    src: url('../Fonts/CircularXX/CircularXX-Light.woff');
+}
+
+@font-face {
+    font-family: Ubuntu__Medium;
+    src: url('../Fonts/Ubuntu/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+    font-family: CircularXX__Regular;
+    src: url('../Fonts/CircularXX/CircularXX-Regular.woff');
+}
+
+@font-face {
+    font-family: Ubuntu__Regular;
+    src: url('../Fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+/****************************************************** External web fonts Ends Here ******************************************************/
+
+:root {
+    --Head-Font: calc(38pt + 0.15vw);
+    --h3: calc(28pt + 0.15vw);
+    --h2: calc(32pt + 0.15vw);
+    --h4: calc(22pt + 0.15vw);
+    --Para-Font: calc(13pt + 0.15vw);
+    --Subpara-Font: calc(10pt + 0.15vw);
+    --letter-spacing: 0.04em;
+    --line-height: 1.6195;
+    --para-Color: #1C3052;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+/* Mozilla Firefox */
+
+@-moz-document url-prefix() {
+    html, body {
+        scrollbar-width: none;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Hero Banner starts here */
+
+.Login__Hero__Banner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 550px;
+    grid-template-rows: 550px;
+    grid-column-gap: 0px;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.Login__Hero__Banner>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.Login__Banner__Img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.Banner__overlay__div {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.Login__Banner__Text {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.Banner__Image {
+    display: -ms-grid;
+    display: grid;
+    min-width: 350px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 0px 0%;
+    object-position: 0px 0%;
+}
+
+.Banner__overlay__div {
+    display: -ms-grid;
+    display: grid;
+    max-width: 100%;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -o-linear-gradient(left, #000000ed, #00000000);
+    background-image: -webkit-gradient(linear, left top, right top, from(#000000ed), to(#00000000));
+    background-image: linear-gradient(to right, #000000ed, #00000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Heading__Login {
+    /* old browser */
+    font-size: calc(38pt + 0.15vw);
+    font-size: var(--Head-Font);
+    letter-spacing: 0.03em;
+    line-height: 1.2165;
+    font-family: 'Ubuntu__Medium';
+    color: #1C3052;
+    margin-bottom: 0px;
+}
+
+/* Bugs */
+
+.Login__Banner__Text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: -moz-fit-content;
+    max-width: -webkit-fit-content;
+    max-width: fit-content;
+    background-color: #fff;
+    margin: 220px 70px 148px 49px;
+    padding: 85px 95px 85px 50px;
+    z-index: 2;
+    opacity: 0.94;
+    /* max-width: 720px; */
+}
+
+@media screen and (max-width: 1080px) {
+    .Login__Banner__Text {
+        margin: 343px 50px 227px 50px;
+        padding: 40px 60px 40px 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Login__Banner__Text {
+        margin: 286px 50px 285px 50px;
+    }
+    .Banner__Image {
+        -o-object-position: -185px 0;
+        object-position: -185px 0;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .Login__Banner__Text {
+        padding: 70px 65px 70px 38px;
+        margin: 272px 29px 368px 14px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .Login__Banner__Text {
+        padding: 67px 25px 67px 25px;
+        margin: 250px 10px 370px 11px;
+    }
+    .Banner__Image {
+        -o-object-position: -360px 60px;
+        object-position: -360px 60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Login__Banner__Text {
+        margin: 279px 24px 178px 24px;
+        padding: 55px 25px 55px 25px;
+    }
+}
+
+/* Bug Ends Here */
+
+@media screen and (max-width: 1080px) {
+    .Login__Hero__Banner {
+        -ms-grid-rows: 800px;
+        grid-template-rows: 800px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .Login__Hero__Banner {
+        -ms-grid-rows: 600px;
+        grid-template-rows: 600px;
+    }
+}
+
+/* Hero Banner Ends here */
+
+/* Contact us form starts here */
+
+
+
+.Contact__Form__wrapper {
+    padding: 10px 10px 20px 10px;
+}
+
+.Contact__formRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+}
+
+.Contact__form__col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.Dbl__col__inside {
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.Text__floating {
+    position: absolute;
+    max-width: 300px;
+    top: 55%;
+    left: -1px;
+    right: 0;
+    bottom: -1px;
+    background-color: white;
+}
+
+.Dbl__col__inside img {
+    width: 100%;
+    min-height: 300px;
+}
+
+.Img__st p {
+    margin-bottom: 0.10rem;
+}
+
+.Contact__form__dbcol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding: 0px 0px 60px 0px;
+}
+
+.Text__li li {
+    font-size: var(--Subpara-Font);
+    letter-spacing: 0.03em;
+    line-height: 1.6195;
+    color: #1C3052;
+    font-family: 'Circular_Font';
+}
+
+.Text__floating #SPanner__text {
+    font-family: 'Circular__Medium';
+    font-size: var(--Subpara-Font);
+    letter-spacing: 0.03em;
+    line-height: 1.6195;
+    color: #1C3052;
+}
+
+@media screen and (max-width: 1080px) {
+    .Text__floating {
+        top: 45%;
+        left: -1px;
+        right: 0;
+        bottom: -1px;
+    }
+    #Form__Section{
+        padding: 0px 0px 60px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Contact__formRow {
+        flex-direction: column;
+    }
+}
+
+.Text__floating ul {
+    padding: 30px 42px 30px 42px;
+}
+
+.Text__floating ul li {
+    padding: 5px 5px 5px 5px;
+}
+
+.Text__floating ul {
+    /* list-style-image: url('../Assets/Icons/Phone_Icon.svg'); */
+}
+
+.Text__floating ul .Img__st {
+    list-style-image: url('../Assets/Icons/place.png');
+}
+
+.Img__st p:nth-child(1) {
+    -webkit-transform: translate(0px, -3px);
+    -ms-transform: translate(0px, -3px);
+    transform: translate(0px, -3px);
+    font-family: 'CircularXX__Light';
+}
+
+.Text__floating ul .Img__st1 {
+    list-style-image: url('../Assets/Icons/Phone__call.png');
+}
+
+.Img__st1 p:nth-child(1) {
+    -webkit-transform: translate(0px, -2px);
+    -ms-transform: translate(0px, -2px);
+    transform: translate(0px, -2px);
+    font-family: 'CircularXX__Light';
+}
+
+.responsive-map {
+    overflow: hidden;
+    padding-bottom: 30.25%;
+    position: relative;
+    height: 0;
+}
+
+.responsive-map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* form starts here */
+
+.floating-label-group {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none;
+    border-bottom: 1px solid #8080805e;
+    border-radius: 0px;
+}
+
+input[type="email"] {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none;
+    border-bottom: 1px solid #8080805e;
+    border-radius: 0px;
+}
+
+input[type="number"] {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none;
+    border-bottom: 1px solid #8080805e;
+    border-radius: 0px;
+}
+
+#Text__area {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none;
+    border-bottom: 1px solid #8080805e;
+    border-radius: 0px;
+}
+
+.floating-label {
+    font-size: var(--Subpara-Font);
+    color: #cccccc;
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left: 0;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    font-family: 'Ubuntu__Regular';
+}
+
+input:focus~.floating-label, input:not(:focus):valid~.floating-label {
+    top: -18px;
+    bottom: 0px;
+    left: 0px;
+    font-size: var(--Subpara-Font);
+    letter-spacing: 0.03em;
+    line-height: 1.6195;
+    color: #cccccc;
+    opacity: 1;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+textarea:focus~.floating-label, textarea:not(:focus):valid~.floating-label {
+    top: -18px;
+    bottom: 0px;
+    left: 0px;
+    font-size: var(--Subpara-Font);
+    letter-spacing: 0.03em;
+    line-height: 1.6195;
+    color: #cccccc;
+    opacity: 1;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.Form__btn {
+    background-color: #de3d3b;
+    border: none;
+    color: white;
+    padding: 8px 26px 8px 26px;
+    font-size: var(--Subpara-Font);
+    letter-spacing: 0.03em;
+    font-family: 'Circular__Medium';
+}
+
+.Text__Form {
+    padding: 60px 0px 60px 0px;
+}
+
+.Text__Form h3 {
+    font-size: var(--h3);
+    font-family: 'Ubuntu__Regular';
+    letter-spacing: 0.03em;
+    line-height: 1.6195;
+    color: #1C3052;
+}
+
+.responsive-map {
+    overflow: hidden;
+    padding-bottom: 30.25%;
+    position: relative;
+    height: 0;
+}
+
+.responsive-map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* form ends here */
+
+/* footer starts here */
+
+#Footer__BG {
+    background-image: url('../Assets/Compressed Images/IE.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.Footer__Row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+}
+
+.Footer__Col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.CopyRight__Text {
+    /* border: 1px solid white; */
+    height: auto;
+}
+
+.CopyRight__Text p {
+    color: white;
+    font-size: calc(10pt + 0.15vw);
+    letter-spacing: 0.03em;
+    line-height: 1.6195;
+    font-family: 'CircularXX__Light';
+    transform: translateY(14px);
+    -webkit-transform: translateY(14px);
+    -moz-transform: translateY(14px);
+    -ms-transform: translateY(14px);
+    -o-transform: translateY(14px);
+}
+
+.Social__Links {
+    height: auto;
+    /* border: 1px solid white; */
+}
+
+.Social__Icon p {
+    color: white;
+    font-size: calc(10pt + 0.15vw);
+    letter-spacing: 0.03em;
+    line-height: 1.6195;
+    font-family: 'CircularXX__Light';
+    transform: translateY(14px);
+    -webkit-transform: translateY(14px);
+    -moz-transform: translateY(14px);
+    -ms-transform: translateY(14px);
+    -o-transform: translateY(14px);
+}
+
+.Social__Icon {
+    display: flex;
+    float: right;
+}
+
+.Social__Icon a img {
+    width: 50px;
+    margin: 0px 10px 0px 10px;
+}
+
+
+@media screen and (max-width: 640px) {
+    .Footer__Row {
+        flex-direction: column;
+    }
+    .Social__Icon {
+        float: none;
+        padding: 20px 0px 20px 0px;
+    }
+    .responsive-map{
+        padding-bottom: 70.25%;
+    }
+    .Social__Icon a img{
+        width: 45px;
+    }
+}
+
+/* footer ends here */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .Contact-banner-text-div {
+        max-width: 900px;
+        width: 100%;
+    }
+    .Text__floating {
+        top: 260px;
+    }
+    .Contact__form__col {
+        padding: 0px 40px 0px 40px;
+    }
+    .Contact-banner-text-div {
+        padding: 40px 60px 40px 60px;
+    }
+    input[type='text'] {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.19);
+    }
+    input[type='email'] {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.19);
+    }
+    input[type='number'] {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.19);
+    }
+    #Text__area {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.19);
+    }
+    .Login__Banner__Text {
+        max-width: 880px;
+    }
+}
